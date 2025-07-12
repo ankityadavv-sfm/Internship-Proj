@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+nav.default {
+  background-color: transparent;
+  color: white;
+}
+
+nav.about {
+  background-color: #004466;
+  color: #fff;
+}
+
+nav.projects {
+  background-color: #552244;
+  color: #fff;
+}
+
+nav.contact {
+  background-color: #222;
+  color: #fff;
+}
+
+.logo {
+  color: inherit;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+ul.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1em;
+  transition: color 0.3s, transform 0.2s;
+  padding: 5px 10px;
+}
+
+ul.nav-links li a:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+section {
+  height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
